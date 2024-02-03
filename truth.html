@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Hiiiiii</title>
+<style>
+p {text-align: center;
+font-size: 60px;
+font-family: Candara, Oswald;}
+img {display: block;
+margin: 0 auto;
+width: 25%;}
+
+
+#botao1 {
+position: fixed;
+top: 50%;
+left: 55%;
+transform: translate(-30%, -30%);}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 49%;}
+</style>
+
+</head>
+<body>
+<p>Can we go on a Date ?</p>
+<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+
+<button id="botao1">YAY Sure!</button>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;}
+else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY THANK U ❤️❤️😘😘');
+});
+</script>
+</body>
+</html>
